@@ -22,6 +22,6 @@ resource "azurerm_resource_group" "terraform-test-rg" {
 
   tags = {
     env = "dev"
-    test-tag = "first-deployment"
+    test-tag = "second-deployment"
   }
 }
