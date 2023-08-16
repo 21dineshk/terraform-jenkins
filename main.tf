@@ -19,4 +19,9 @@ provider "azurerm" {
 resource "azurerm_resource_group" "terraform-test-rg" {
   name     = "terraform-test-rg"
   location = "East US"
+
+  tags = {
+    env = "dev"
+    test-tag = "first-deployment"
+  }
 }
